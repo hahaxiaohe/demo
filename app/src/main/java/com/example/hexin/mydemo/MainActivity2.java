@@ -21,7 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              //这里调用mylibrary.utils.addmenu
+              //这里调用mylibrary.utils.addmenu 实现效果
                util.addMenu();
             }
         });
@@ -29,7 +29,7 @@ public class MainActivity2 extends AppCompatActivity {
         findViewById(R.id.btn2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //这里调用mylibrary.utils.settitltbackgroud
+                //这里调用mylibrary.utils.settitltbackgroud 实现效果
                 util.setTitleBackground(MainActivity2.this);
             }
         });

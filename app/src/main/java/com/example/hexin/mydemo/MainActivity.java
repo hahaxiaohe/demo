@@ -1,5 +1,6 @@
 package com.example.hexin.mydemo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v4.view.MenuItemCompat;
@@ -34,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
             //这里调用本类中的addMenu方法实现,  需求请看activity2(已实现)
             public void onClick(View view) {
                 setTitleBackground(Color.parseColor("#ff0000"));
+            }
+        });
+
+        findViewById(R.id.btn3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,MainActivity2.class));
             }
         });
     }
